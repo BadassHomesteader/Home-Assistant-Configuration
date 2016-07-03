@@ -1,0 +1,72 @@
+homeassistant:
+  name: Home
+  latitude: 38.4031
+  longitude: -78.8914
+  temperature_unit: F
+  time_zone: America/New_York
+  customize: !include customize.yaml
+
+####################################################
+#                     Enables
+####################################################
+logger:
+frontend:
+history:
+discovery:
+sun:
+conversation:
+logbook:
+
+####################################################
+#                     Zones
+####################################################
+zone:
+  name: Home
+  latitude: 38.499099941541786
+  longitude: -78.4717757999897
+  radius: 500
+  icon: mdi:home 
+
+####################################################
+#                     Customize
+####################################################
+#https://design.google.com/icons/
+#customize: !include customize.yaml
+   
+####################################################
+#                     Sensors
+####################################################
+sensor:
+   platform: yr
+   monitored_conditions:
+    - temperature
+    - precipitation
+    - pressure
+    - windDirection
+    - humidity
+    - dewpointTemperature
+
+#  platform: forecast
+#  api_key: aaa4f10dac2342041f142a6ca199ae13/38.4031,-78.8914
+#  monitored_conditions:
+#    - summary
+#    - precip_type
+#    - precip_intensity
+#    - precip_probability
+#    - temperature
+#    - apparent_temperature
+#    - dew_point
+#    - wind_speed
+#    - wind_bearing
+#    - cloud_cover
+#    - humidity
+#    - pressure
+#    - visibility
+
+####################################################
+#                     Zwave
+####################################################
+
+####################################################
+#                     Groups
+####################################################
